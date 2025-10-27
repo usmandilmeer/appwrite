@@ -29,8 +29,7 @@ RUN \
   fi
 
 RUN apk add libwebp
-RUN apk del imagemagick-dev
-RUN apk add imagemagick-dev
+RUN apk del imagemagick-dev && apk add --no-cache imagemagick-dev
 
 WORKDIR /usr/src/code
 
