@@ -28,8 +28,7 @@ RUN \
     apk add boost boost-dev; \
   fi
 
-RUN apk add libwebp
-RUN apk add imagemagick-dev
+RUN apk add libwebp imagemagick-dev
 
 WORKDIR /usr/src/code
 
